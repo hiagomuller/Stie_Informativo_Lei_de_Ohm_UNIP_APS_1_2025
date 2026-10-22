@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+/* root cria variaveis, podendo colocar um valor para a mesma para ser usada posteriormente */
+:root{ 
+    --roxo-escuro: #3D05F0;
+    --btn-degrade: linear-gradient(#ffa600, #ff6600);
+    --teste: red;
+}
+
+.background-roxo-escuro{
+    background-color: var(--roxo-escuro);
+}
+
+.container{
+    max-width: auto;
+    padding: 0 5%;
+    margin: 0 auto;
+    box-shadow: black 0 5px 20px;    
+}
+
+.btn-gradiente{
+    padding: 10px 200px;
+    color: white;
+    border: none;
+    background-image: var(--btn-degrade);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    box-shadow: black 0 5px 20px;
+}
+
+nav{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    
+}
+
+.logo {
+    align-items: center;
+    display: flex;
+}
+
+.logo a{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* main - apresentação */
+
+main .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.main-text{
+    width: 50%;
+    color: white;
+}
+
+.main-text-pg2{
+    width: 100%;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: xx-large;
+}
+
+.img-main-text{
+    height: 50px;
+    width: 50px;
+    margin-left: 25px;
+}
+
+.main-text h1{
+    font-size: 4.5rem;
+    box-shadow: 0;
+}
+
+.main-text div{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.main-img{
+    width: 40%;
+
+}
+
+.main-img img{
+    width: 60%;
+    box-shadow: black 0 5px 20px;
+    display: flex;
+    max-width: 100%;
+}
+
+.container-page2{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: var(--roxo-escuro);
+    max-width: auto;
+    padding: 0 5%;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+h4{
+    color: white;
+    font-size: xx-large;
+    display: grid;
+    justify-content: center;
+    background-color: var(--roxo-escuro);
+    box-shadow: black 0 5px 20px;
+}
+
+.container-page2 img{
+    
+    padding: 10px 10px;
+    width: 50%;
+}
+
+.container-page2 ul{
+    width: 50%;
+    margin: 0 10px;
+    color: white;
+    margin-top: 40px;
+
+}
+
+.container-page2 ul li{
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.container-text{
+    max-width: 1300px;
+    padding-right: 20%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    align-content: center;
+}
+
+.container-text ul{
+    width: 100%;
+    color: white;
+    align-items: center;
+    text-align: justify;
+    margin: 10%;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.container-text ul li{
+    margin-bottom: 10px;
+    align-items: center;    
+}
+
+.container-text ul li ol li{
+    margin: 0;
+    font-size: medium;
+    font-weight: normal;
+    list-style: none;
+}
+
+footer {
+    background-color: var(--roxo-escuro);
+    padding: 0.5% 0;
+}
+
+footer .container{
+    padding-top: 20px;
+    color: white;
+    display: flex;
+    box-shadow: black 0 5px 20px 10px;
+    justify-content: center;
+
+}
+
+footer .container ul{
+    width: 25%;
+    margin: 10px 0;
+    list-style: none;
+}
+
+footer .container li{
+    margin: 10px 0;
+}
+
+footer .container a{
+    color: white;
+    margin-left: 30%;
+}
+
+footer .container h3{
+    margin-bottom: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+footer .container .redes-sociais img{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.text-center li{
+    text-align: center;
+}
+
+footer .container ul > p{
+    margin-bottom: 20px;
+    text-align: justify;
+    margin-right: 30px;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--roxo-escuro);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: orange;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid var(--roxo-escuro);  /* creates padding around scroll thumb */
+}
+
+/* tentativa de criar uma tabela */
+.container-tabela{
+    justify-content: center;
+    background-color: var(--roxo-escuro);
+    max-width: auto;
+    padding: 5%;
+    width: 100%;
+    align-items: center;
+    box-shadow: black 0 5px 20px;   
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: var(--roxo-escuro);
+}
+table, th, td {
+    border: 1px solid white;
+}
+th, td {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+th {
+    background-color: var(--roxo-escuro);
+}
